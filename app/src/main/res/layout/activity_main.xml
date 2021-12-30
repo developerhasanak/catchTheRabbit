@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <GridLayout
+        android:id="@+id/gridLoyut"
+        android:layout_width="411dp"
+        android:layout_height="411dp"
+        android:background="#FFC107"
+        android:orientation="horizontal"
+        android:rowCount="4"
+        android:columnCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/image0"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image10"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image11"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image12"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image13"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image14"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+        <ImageView
+            android:id="@+id/image15"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:onClick="increaseScore"
+            android:background="@color/white"
+            android:src="@drawable/tavsan"
+
+            >
+
+        </ImageView>
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="111dp"
+        android:layout_height="111dp"
+        android:gravity="center"
+        android:text="Time"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/scor"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/time"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Scor:"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#553609"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/previousScore"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="previousscore:"
+        android:textColor="#29B32E"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLoyut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scor"
+
+        app:layout_constraintVertical_bias="0.32">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
