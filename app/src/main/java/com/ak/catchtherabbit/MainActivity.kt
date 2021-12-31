@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
                   startActivity(intent)
 
               }
-              alert.setNegativeButton("Nos"){dialog,wich ->
+              alert.setNegativeButton("No"){dialog,wich ->
                   finish()
 
               }
