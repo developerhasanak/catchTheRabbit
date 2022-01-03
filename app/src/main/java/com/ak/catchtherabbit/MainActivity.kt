@@ -1,6 +1,8 @@
 package com.ak.catchtherabbit
 
 import android.content.SharedPreferences
+import android.media.MediaParser
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -19,11 +21,16 @@ class MainActivity : AppCompatActivity() {
     var runnable:Runnable = Runnable {  }
     var handler = Handler(Looper.getMainLooper())
     var imageList = ArrayList<ImageView>()
+    lateinit var catchMusic:MediaPlayer
+    lateinit var backgroundMusic:MediaPlayer
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        backgroundMusic = MediaPlayer.create(this@MainActivity,R.raw.arkaplan)
+        backgroundMusic.start()
+        catchMusic = MediaPlayer.create(this@MainActivity,R.raw.tavsanyakalama)
         sharedPreferences = this.getSharedPreferences("com.ak.catchtherabbit", MODE_PRIVATE)
 
         val data = sharedPreferences.getInt("data",0)
@@ -48,6 +55,10 @@ class MainActivity : AppCompatActivity() {
         imageList.add(binding.image13)
         imageList.add(binding.image14)
         imageList.add(binding.image15)
+        imageList.add(binding.image16)
+        imageList.add(binding.image17)
+        imageList.add(binding.image18)
+        imageList.add(binding.image19)
 
 
        hideİmage()
@@ -88,6 +99,7 @@ fun increaseScore(view: View){
     scor+=1
     binding.scor.text= "Skor:$scor"
     sharedPreferences.edit().putInt("data",scor).apply()
+    catchMusic.start()
 
 }
 fun hideİmage(){
@@ -98,7 +110,7 @@ fun hideİmage(){
                 image.visibility = View.INVISIBLE
             }
             val random = java.util.Random()
-            val index = random.nextInt(16)
+            val index = random.nextInt(20)
             imageList[index].visibility = View.VISIBLE
            handler.postDelayed(runnable,500)
         }
